@@ -1,0 +1,38 @@
+#title1 {
+	font-size: 2em;
+	background-color: #D80000;
+	color: white;
+	text-align: center;
+	border: 2px solid;
+    border-radius: 25px;
+}
+}
+body {
+    /*background-image: url("menuBackground2.jpg");*/
+	background-color:#FFEBCD
+}
+a:link{
+	font-weight: bold;
+	color:#000099;
+	text-decoration: none;
+}
+a:visited{
+	color :green;
+	text-decoration: none;
+}
+a:hover {
+    color: red;
+	text-decoration: none;
+}
+h1{
+	color: white;
+	font-style: bold;
+	background-color: blue;
+	text-align: center;
+	border: 2px solid;
+    border-radius: 25px;
+}
+
+/img {
+    float: right;
+}

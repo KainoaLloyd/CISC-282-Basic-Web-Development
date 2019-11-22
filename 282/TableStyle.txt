@@ -1,0 +1,6 @@
+#title1 {
+	font-size: 2em;
+	background-color: #D80000;
+	color: white;
+	text-align: center;
+}

@@ -1,0 +1,118 @@
+<DOCTYPE html>
+<html>
+		<!--
+		Assignment 4 Harmony
+		Author: Kainoa Lloyd 
+		Student number: 10114858 
+		NetID:13krl1@queensu.ca
+		CISC 282
+		-->
+	<head>
+		<title>Dating Website </title>
+		<link rel="stylesheet" type="text/css" href="datingStyle.css">
+		<script src="harmony.js" type="text/javascript"></script>
+		<script src="interactive.js" type="text/javascript"></script>
+	</head>
+	
+	<body>
+		<h1>Welcome to Queen's Matchmaker!</h1>
+	
+		<!-- This is the form information that I want to  collect-->
+		<form action="http://54.68.135.11/13krl1/signup-submit.php" enctype="mutlipart/form-data" method="post">
+			<fieldset>
+				<legend>Registration information</legend>
+				
+				<h2>Basic Information</h2>
+				<div id="registrationForm">
+					<label class="heading">First Name</label><input id = "firstname" type="text" value ="" required="required" autofocus="autofocus" onchange="displayInfo();"/><br/>
+					<label class="heading">Last Name</label><input id = "Lastname" type="text" value ="" onchange="displayInfo();"/><br/>
+					<label class="heading">Username</label><input id = "username" type="text" value ="" required="required" onchange="displayInfo();" /><br/>
+					<label class="heading">E-mail Address</label><input id = "email" type="text" value ="" required="required" onchange="displayInfo();" /><br/>
+					<label class="heading">	Gender: </label>
+						<label><input type="radio" name="gender" value="Male" checked="On" onchange="displayInfo();" />Male</label>
+						<label><input type="radio" name="gender" value="Female" onchange="displayInfo();" />Female</label><br/>
+					<label class="heading">	Birthday</label>
+						<div>
+							<select name="month" onchange="displayInfo();" >
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+								<option value="4">April</option>
+								<option value="5">May</option>
+								<option value="6">June</option>
+								<option value="7">July</option>
+								<option value="8">August</option>
+								<option value="9">September</option>
+								<option value="10">October</option>
+								<option value="11">November</option>
+								<option value="12">December</option>
+							</select>
+							<select name="day" onchange="displayInfo();">
+								<option value="1">1</option>
+							</select>
+							<select name="year" onchange="displayInfo();">
+									<option value="1"> 1</option>" 
+							</select>
+						<div>
+					<label class="heading">Password</label><input id = "pw" type="password" value ="ahiddenpw" required="required" onchange="displayInfo();"/></br>
+				</div>
+				<div>
+					Upload a profile picture:
+					<input type="file" name="pic" size"60" onchange="displayInfo();" />
+				</div>
+
+				<h2>About You</h2>
+				<label class="heading">Ethnicity</label><input type="text" name="ethnicity" value ="" onchange="displayInfo();"/><br/>
+				<label class="heading">Nationality</label><input type="text" name="ethnicity"value ="" onchange="displayInfo();"/><br/>
+				<label class="heading">	Faculty</label>
+					<div>
+						<select name="faculty" onchange="displayInfo();">
+							<option>Applied Sciences</option>
+							<option>Nursing</option>
+							<option>Arts and Science</option>
+							<option>Commerce</option>
+							<option>PHE/KIN</option>
+							<option>Con-Ed</option>
+							<option>Computing</option>
+						</select>
+					</div>
+					<div>
+						<h2>Partner Preferences</h2>
+						<label class="heading">Ethnicity</label><input type="text" name="mEthnicity"value ="" onchange="displayInfo();"/><br/>
+						<label class="heading">Nationality</label><input type="text" name="mNationality" value ="" onchange="displayInfo();"/><br/>
+						<label class="heading">	Faculty</label>
+							<div>
+								<select name="mFaculty" onchange="displayInfo();">
+									<option>Applied Sciences</option>
+									<option>Nursing</option>
+									<option>Arts and Science</option>
+									<option>Commerce</option>
+									<option>PHE/KIN</option>
+									<option>Con-Ed</option>
+									<option>Computing</option>
+								</select>
+							</div>
+						<label class="heading">	Gender: </label>
+							<label><input type="radio" name="mGender" value="Male" checked="On" onchange="displayInfo();" />Male</label>
+							<label><input type="radio" name="mGender" value="Female" onchange="displayInfo();" />Female</label>
+							<label><input type="radio" name="mGender" value="Female" onchange="displayInfo();" />Both</label><br/>
+					</div>
+					<!--<button onclick="validate();" id="validate">Validate</button> -->
+						<button onclick="reset();" id="reset" type = "reset">Reset</button>
+						<button id="register" type="submit">Register</button>
+					</div>
+					<img src="cupid.jpg" alt="love" style="width: 100px;height:100px">
+		</fieldset>
+
+
+					
+		</form>
+		
+	</body>
+
+		<footer>
+			<p><i>Copyright &copy 2014 CISC 282</i></p>
+			<p><i>All Rights Reserved</i></p>
+		</footer>
+	
+</html>

@@ -1,0 +1,30 @@
+#title1 {
+	font-size: 2em;
+	background-color: #D80000;
+	color: white;
+	text-align: center;
+}
+.section{
+	text-decoration: underline;
+	font-style: bold;
+	background-color: #8B008B;
+	text-align: left;
+}
+#body1{
+	text-align:left;
+}
+body{
+	font-family: "Arial Verdana";
+	color: black;
+}
+a:link{
+	font-weight: bold;
+	color:#000099;
+	text-decoration: none;
+}
+ul {
+	background-color:#FFEBCD;
+}
+ol{
+	background-color:#FFEBCD;
+}

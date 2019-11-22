@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>"hello"</title>
+	</head>
+	<body>
+		<p>
+	<?php
+	include("classrecipes.txt");
+	$recipe = file("classrecipes.txt", FILE_IGNORE_NEW_LINES);
+	echo "$recipe[1]";
+	$categories = array();
+	ECHO "hl";
+	for ($index = 0; $index < count($recipe); $index++){
+		$columns = array(explode("|", $recipe[$index]));
+		print $columns[$index][1];
+	}
+	echo $columns[2];
+	for ($row = 0; $row < count($columns); $row++){
+		$categories[] = $columns[$row][2];
+	}
+	echo "hi";
+	array_unique($categories];
+	sort($categories);
+	?>
+	<?php
+	for($index = 0; $index < count($categories); $index++){
+	?>
+		<p><?= $categories[$index] ?></p>
+		<?php
+		for($row = 0; $row < count($columns); $row++){
+			if ($categories[$index] == $columns[$row][2]){
+		?>
+				<a href=<? "columns[$row][3]" ?> > <? $columns[$row][1] ?> </a>
+			}
+		}
+	}
+	</p>
+	</body>
+</html>

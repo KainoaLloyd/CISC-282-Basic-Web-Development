@@ -1,0 +1,80 @@
+	/* Assignment 4 Harmony
+		Author: Kainoa Lloyd 
+		Student number: 10114858 
+		NetID:13krl1@queensu.ca
+		CISC 282
+	*/
+input {
+	margin-bottom:0.5em;
+}
+label.heading{
+	float: left;
+	margin-right: 1em;
+	text-align: right;
+	width: 7em;
+}
+fieldset{
+	background-color: black;
+	margin-left: auto; margin-right:auto;
+	width: 40em;
+	/*float: left;*/
+}
+
+footer {
+	background-color:Black;
+	color:White;
+	text-align:center;
+	padding-bottom:20px;
+	padding-top:5px;
+	margin-bottom:0px;
+}
+footer p {
+	margin:0px;
+}
+
+/*from TableStyle */
+#title1 {
+	font-size: 2em;
+	background-color: #D80000;
+	color: white;
+	text-align: center;
+	border: 2px solid;
+    border-radius: 25px;
+}
+
+body {
+	color:white;
+	margin: 0px;
+    background-image: url('valentines.jpg');
+	background-color:blue;
+}
+a:link{
+	font-weight: bold;
+	color:#000099;
+	text-decoration: none;
+}
+a:visited{
+	color :green;
+	text-decoration: none;
+}
+a:hover {
+    color: red;
+	text-decoration: none;
+}
+h1{
+	color: white;
+	font-style: bold;
+	background-color: black;
+	text-align: center;
+	border: 2px solid;
+    border-radius: 25px;
+	size = 80em;
+	margin-top = 0px;
+
+}
+p{
+float= right;
+}
+img {
+    float: right;
+}
